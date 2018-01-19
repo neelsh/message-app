@@ -23,3 +23,5 @@ app.post('/send', bodyParser, function(req, res) {
   console.log(req.body);
   res.status(200).send('Hooray! It works...!')
 });
+
+module.exports = app;
