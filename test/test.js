@@ -13,7 +13,7 @@ describe('Unit test', function() {
   it('returns correct headers', function(done) {
     request
       .get('/')
-      .expect('Content-Type', 'text/plain', done);
+      .expect('Content-Type', 'text/html; charset=utf-8', done);
   });
 
   it('returns error code if path is incorrect', function(done) {
